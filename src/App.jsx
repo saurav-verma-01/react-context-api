@@ -1,10 +1,14 @@
-import React from "react";
+import Login from "./components/Login";
+import Profile from "./components/Profile";
+import UserContextProvider from "./context/UserContextProvider";
 
 const App = () => {
   return (
-    <div>
+    <UserContextProvider>
       <h1>React Context API</h1>
-    </div>
+      <Login />
+      <Profile />
+    </UserContextProvider>
   );
 };
 
